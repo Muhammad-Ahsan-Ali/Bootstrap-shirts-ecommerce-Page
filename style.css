@@ -1,0 +1,271 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+
+  font-family: "proxima-nova", sans-serif;
+}
+
+.navbar {
+  border-bottom: 0.5px solid #959595 !important;
+  background: #f5f5f5;
+  min-height: 100px;
+  width: 100%;
+  padding: 0 !important;
+}
+.navbar-brand {
+  min-width: 11.46% !important; /* Percentage based on the 1440px width of navbar */
+  margin-left: 4.44%; /* Adjusted margin-left for proportional spacing */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 100%; /* Let the image take full width of the navbar-brand */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+.navbar-brand .logo1 {
+  width: 62.89px; /* Viewport width to make it responsive */
+  height: 62.89px; /* Let height scale proportionally */
+}
+
+.navbar-brand .logo2 {
+  width: 97.98px; /* Viewport width to make it responsive */
+  height: 37.07px; /* Maintain aspect ratio */
+  margin-top: 0.14vw; /* Adjust margin using viewport units */
+}
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 41vw;
+  /* height: 16px; */
+  /* margin-top: -16px; */
+  /* margin-left: 0px; */
+  text-wrap: nowrap;
+}
+
+.nav-item a {
+  color: black !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+.nav-item .active {
+  position: relative;
+  text-decoration: none; /* Remove the default underline */
+}
+
+.nav-item .active::after {
+  content: ""; /* This is the pseudo-element for the underline */
+  position: absolute;
+  left: 0;
+  bottom: 0.8em; /* Adjust the vertical position of the underline */
+  width: 90%; /* Increase the width to 110% */
+  height: 1px; /* Thickness of the underline */
+  background-color: black; /* Underline color */
+  transform: translateX(4.5px); /* Center the underline by moving it left */
+}
+
+.nav-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  width: 18.4vw;
+  text-wrap: nowrap;
+}
+.wallet-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  background: #c4c4c4;
+  width: 138px;
+  height: 31px;
+  border-radius: 50px;
+  text-wrap: nowrap;
+  font-size: 012px;
+  font-weight: 700;
+  letter-spacing: 10%;
+  font-family: "Roboto";
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove any shadow */
+}
+
+.wallet-btn:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Ensure no shadow on focus */
+}
+
+.wallet-btn:hover {
+  color: black;
+
+  background: #b0b0b0; /* Optional: Change background on hover for better UX */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.bag-icon {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.form-check input {
+  width: 47px !important;
+  height: 21px !important;
+  outline: none; /* Remove focus outline */
+}
+
+.form-check input:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Ensure no shadow on focus */
+}
+
+switch {
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column; /* Stack switch and label */
+  align-items: center; /* Center horizontally */
+}
+
+.form-check-input {
+  width: 3.26vw; /* Width of the switch */
+  margin-bottom: 0; /* Remove margin */
+  margin-top: 20px;
+}
+
+.switch label {
+  margin: 0; /* Remove default margin */
+  font-weight: 400;
+  font-size: 10px;
+  font-family: "Roboto";
+  text-align: center; /* Center the label text */
+  padding-left: 0; /* Ensure no extra padding */
+}
+
+.form-check-input {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTIiIGZpbGw9IndoaXRlIi8+PC9zdmc+") !important;
+  background-size: 43%;
+  background-color: #c4c4c4;
+  border-color: #c4c4c4;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Change the slider (thumb) color when it's checked */
+.form-check-input:checked {
+  background-color: #c4c4c4;
+  border-color: #c4c4c4;
+  box-shadow: none;
+}
+
+.form-check-input:checked::before {
+  background-color: white; /* Set the thumb color to white */
+  border-radius: 50%; /* Ensure it stays circular */
+}
+
+/* CARD CSS */
+
+.card {
+  width: 230px;
+  height: 246px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15); /* Updated shadow for all sides */
+  margin: 0 auto;
+  padding: 0;
+}
+.card img {
+  width: 189px;
+  height: 167px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  object-fit: contain;
+}
+.card-body p {
+  margin: 5px 0; /* Adjust to reduce the space between paragraphs */
+  line-height: 9px; /* Adjust to tweak the line height */
+}
+.card-title {
+  font-size: 14px;
+}
+.card-text {
+  font-size: 12px;
+}
+
+/* <!--===============Responsive Design=================--> */
+
+@media (max-width: 1200px) {
+  /* Your styles for max-width: 1200px here */
+  .card {
+    width: 210px;
+    height: 246px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Your styles for max-width: 1024px here */
+
+  .nav-group {
+    width: 28.4vw;
+  }
+
+  .card {
+    width: 165px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Your styles for max-width: 768px here */
+
+  .card {
+    width: 230px;
+    height: 246px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Your styles for max-width: 576px here */
+}
+
+@media (max-width: 500px) {
+  /* Your styles for max-width: 575px here */
+  .card {
+    width: 210px;
+    height: 246px;
+  }
+}
+
+@media (max-width: 455px) {
+  /* Your styles for max-width: 400px here */
+  .card {
+    width: 160px;
+    height: 230px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-collapse {
+    text-align: center; /* Center the text */
+  }
+
+  .navbar-nav {
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Make sure it spans the full width */
+    margin: 0; /* Reset any margins */
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Add some vertical space between the items */
+  }
+}
